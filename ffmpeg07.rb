@@ -30,7 +30,8 @@ class Ffmpeg07 < Formula
            "--cc=#{ENV.cc}",
            "--host-cflags=#{ENV.cflags}",
            "--host-ldflags=#{ENV.ldflags}",
-           "--enable-libmp3lame"
+           "--enable-libmp3lame",
+           "--disable-doc"
           ]
 
    if build.include? 'with-openjpeg'
